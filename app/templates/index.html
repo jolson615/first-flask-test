@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Hello, {{ user.username }}!</h1>
+  <a href="/posts">Click here to view the blog</a>
+  <hr>
+  <form method="post" action="/results">
+    <label for="name">What's your name?</label>
+    <input type='text' name='name'>
+    <label for="breakfast">What did you have for breakfast?</label>
+    <input type='text' name='breakfast'>
+    <input type='submit'>
+  </form>
+  <img src="{{ url_for('static', filename='images/micropig.jpeg') }}" />
+{% endblock %}
