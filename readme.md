@@ -10,7 +10,11 @@
 
 ## Context
 
-This isn't a professional grade application - it doesn't include authentication or a database. It does, however, expose students to the concept of a Model-View-Controller framework
+This isn't a professional grade application - it doesn't include authentication or a database. It does, however, expose students to the concept of a Model-View-Controller framework.
+
+The goal here is to understand and experiment with HTTP methods, the major parts of an MVC framework, the movement of information between parts of the application, and the separation of concerns.
+
+This example app goes a little deeper than most students will go after just two weeks of programming (e.g. block content, virtual environments), but we wanted to put down some learnings as a reference so that you'll be ready to answer questions your students might have this summer. 
 
 ## Virtual Environments
 
@@ -151,4 +155,4 @@ pip install python-dotenv
 touch .flaskenv
 ```
 
-Unfortunately, Codenvy literally and immutably hides files with a `.` prefix, so you CANNOT edit them in the editor. There are a few workarounds (like using a CL editor like VIM or changing the filename with `mv .flaskenv flaskenv` before editing and then back with `mv flaskenv .flaskenv` afterwards), but ultimately, it just makes a lot more sense to embed the requirements into the [run command](#codenvy-setup). 
+Unfortunately, Codenvy literally and immutably hides files with a `.` prefix, so you CANNOT edit them in the editor. There are a few workarounds (like using a CL editor like VIM or changing the filename with `mv .flaskenv flaskenv` before editing and then back with `mv flaskenv .flaskenv` afterwards), but ultimately, it just makes a lot more sense to embed the requirements into the [run command](#codenvy-setup).
