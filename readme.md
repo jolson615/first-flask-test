@@ -14,7 +14,7 @@ This isn't a professional grade application - it doesn't include authentication 
 
 The goal here is to understand and experiment with HTTP methods, the major parts of an MVC framework, the movement of information between parts of the application, and the separation of concerns.
 
-This example app goes a little deeper than most students will go after just two weeks of programming (e.g. block content, virtual environments), but we wanted to put down some learnings as a reference so that you'll be ready to answer questions your students might have this summer. 
+This example app goes a little deeper than most students will go after just two weeks of programming (e.g. block content, virtual environments), but we wanted to put down some learnings as a reference so that you'll be ready to answer questions your students might have this summer.
 
 ## Virtual Environments
 
@@ -51,10 +51,12 @@ Furthermore, even though a virtual environment will work once within Codenvy, th
 With Codenvy, the only tricky part is setting up the run command. Since the preview URL is created dynamically, the ports and ip addresses you create NEED to match codenvy's internal setup, and even when that's done correctly, there's no way to identify the preview URL's exact server and port without using the built-in command tool.
 
 You'll need to create a new run command.
+
 ![run command interface](images/command.png)
 
 
 Then you'll need to script out the series of shell commands that would let you start up a server.
+
 ![bash commands to run a server](images/script.png)
 
 Here's the code for copy-paste purposes:
@@ -68,6 +70,7 @@ flask run
 ```
 
 And finally, you'll need to output the generated preview URL.
+
 ![run command image](images/preview.png)
 
 Here's the code for copy-paste purposes:
@@ -76,6 +79,7 @@ http://${server.port.8080}
 ```
 
 Frustratingly, this doesn't stop flask itself from outputting the (incorrect) internal preview address. The external address (in blue) will work for students; the internal address (in red) will not.
+
 ![console output](images/preview2.png)
 
 it's also worth noting that since codenvy doesn't play nicely with hidden files like .git and .flaskenv, we're going to store the commands in this run command. But normally, you'd use the .flaskenv file to store the following code:
