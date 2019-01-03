@@ -10,7 +10,7 @@
 
 ## Context
 
-This isn't a professional grade application - it doesn't include authentication or a database. It does, however, expose students to the concept of a Model-View-Controller framework.
+This isn't a professional grade application - it doesn't include authentication or a database, and it ignores a lot of packages/extensions/modules that could do what this does a lot more elegantly. Those are intentional choices, as it exposes students to the concept of a Model-View-Controller framework in a way that relies on more pure python knowledge, and will feel like less of a leap for students who have only been in the content for one immersive week.
 
 The goal here is to understand and experiment with HTTP methods, the major parts of an MVC framework, the movement of information between parts of the application, and the separation of concerns.
 
